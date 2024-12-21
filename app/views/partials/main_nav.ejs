@@ -1,0 +1,37 @@
+<!--
+File Name : main_nav.ejs
+Student No : 301295806
+Student Name : Hyewon Ham
+Date : 2023.09.30
+-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a href="/"><img src="/img/logo.png" alt="logo" style="width:150px; height:100px;"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-max ml-auto mb-2 mb-lg-0">
+        <b>
+          <li class="nav-item <%= title === 'Home' ? 'active' : '' %>">
+            <a class="nav-link" href="/"><i class="fas fa-lg fa-laptop-house"></i> Home</a>
+          </li>
+          <li class="nav-item <%= title === 'About Me' ? 'active' : '' %>">
+            <a class="nav-link" href="/aboutme"><i class="fa-solid fa-address-card"></i> About Me</a>
+          </li>
+          <li class="nav-item <%= title === 'Projects' ? 'active' : '' %>">
+            <a class="nav-link" href="/projects"><i class="fa-brands fa-product-hunt"></i> Projects</a>
+          </li>
+          <li class="nav-item <%= title === 'Services' ? 'active' : '' %>">
+            <a class="nav-link" href="/services"><i class="fa-brands fa-servicestack"></i> Services</a>
+          </li>
+          <li class="nav-item <%= title === 'Contact' ? 'active' : '' %>">
+            <a class="nav-link" href="/contact"><i class="fa-solid fa-address-book"></i> Contact</a>
+          </li>
+        </b>
+      </ul>
+    </div>
+  </div>
+</nav>
