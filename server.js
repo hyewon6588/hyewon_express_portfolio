@@ -7,13 +7,17 @@ Date : 2023.09.30
 
 // const path = require('path');
 // process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-var createExpressApp = require('./config/express');
+var createExpressApp = require("./config/express");
 var app = createExpressApp();
 
-// app.listen(3000);
-// app.listen(process.env.PORT || 3000, function(){
-//     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-//   });
+// app.listen(3002);
+app.listen(process.env.PORT || 3000, function () {
+  console.log(
+    "Express server listening on port %d in %s mode",
+    this.address().port,
+    app.settings.env
+  );
+});
 
 module.exports = app;
 
